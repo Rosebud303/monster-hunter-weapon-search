@@ -1,8 +1,9 @@
 import { combineReducers } from 'redux';
-import { cardsReducer } from './cardsReducer';
+import * as reducers from './allReducer';
 
 const rootReducer = combineReducers({
-  cards: cardsReducer
+  weapons: reducers.weaponsReducer,
+  isLoading: reducers.isLoadingReducer
 })
 
 export default rootReducer;
