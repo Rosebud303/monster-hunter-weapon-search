@@ -6,6 +6,7 @@ const getAllWeapons = (url) => {
     try{
       dispatch(isLoading(true))
       const weapons = await fetchAll(url)
+      console.log(weapons)
       dispatch(isLoading(false))
       dispatch(setWeapons(weapons))
     } catch (error) {
