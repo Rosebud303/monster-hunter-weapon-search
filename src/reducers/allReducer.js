@@ -2,15 +2,32 @@ export const weaponsReducer = (state = [], action) => {
   switch (action.type) {
     case 'SET_WEAPONS':
       return action.weapons.map( weapon => {
-        return {
-          id: weapon.id,
-          name: weapon.name,
-          minDMG: weapon.attack.raw,
-          maxDMG: weapon.attack.display, 
-          rarity: weapon.rarity,
-          damageType: weapon.attributes.damageType,
-          craftable: weapon.crafting.craftable,
-          assests: weapon.assets
+        if(weapon.assets !== null) {
+          const image = weapon.assets.image
+          return {
+            id: weapon.id,
+            type: weapon.type,
+            name: weapon.name,
+            minDMG: weapon.attack.raw,
+            maxDMG: weapon.attack.display, 
+            rarity: weapon.rarity,
+            damageType: weapon.attributes.damageType,
+            craftable: weapon.crafting.craftable,
+            picture: image
+          }
+        } else if (weapon.assets === null) {
+          return {
+            id: weapon.id,
+            type: weapon.type,
+            name: weapon.name,
+            minDMG: weapon.attack.raw,
+            maxDMG: weapon.attack.display, 
+            rarity: weapon.rarity,
+            damageType: weapon.attributes.damageType,
+            craftable: weapon.crafting.craftable,
+            picture: 'No Image'
+          }
+
         }
       })
     default:

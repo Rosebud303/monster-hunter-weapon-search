@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import getAllWeapons from '../../thunks/getAllWeapons'
+import getAllWeapons from '../../thunks/getAllWeapons';
+import WeaponContainer from '../weaponContainer/WeaponContainer'
 
 export class App extends Component {
 
@@ -11,7 +12,7 @@ export class App extends Component {
   render() {
     return (
       <div>
-        hi
+        <WeaponContainer />
       </div>
     )
   }

@@ -1,10 +1,13 @@
-import React from 'react'
+import React from 'react';
+import { Link } from 'react-router-dom'
+import './Weapon.scss'
 
-export const Weapon = () => {
+export const Weapon = (prop) => {
   return (
-    <div>
-      hi
-    </div>
+    <Link className='weapon-card'>
+      <p>{prop.weapon.name}</p>
+      <img className='weapon-image' src={prop.weapon.picture} />
+    </Link>
   )
 }
 
