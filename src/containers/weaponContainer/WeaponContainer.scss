@@ -2,6 +2,12 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  height: 40em;
+  max-height: 58%;
   overflow: scroll;
+  box-shadow: 0px 1px 20px 5px;
+  background-color: rgba(0, 0, 0, 0.6);
+  border: solid 4px #231f20c2;
+  padding: 2em;
+  width: 80%;
+  margin: auto;
 }
