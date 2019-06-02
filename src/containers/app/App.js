@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import './App.css'
+import Loader from '../../components/loader/Loader'
 import getAllWeapons from '../../thunks/getAllWeapons';
 import WeaponContainer from '../weaponContainer/WeaponContainer'
 
@@ -11,15 +13,22 @@ export class App extends Component {
 
   render() {
     return (
-      <div>
-        <WeaponContainer />
+      <div className='app'>
+      <img src={'https://i.imgur.com/4kh8sCT.png'} />
+        {
+          !this.props.isLoading ?
+          <WeaponContainer />
+          :
+          <Loader />
+        }
       </div>
     )
   }
 }
 
 export const mapStateToProps = (state) => ({
-  weapons: state.weapons
+  weapons: state.weapons,
+  isLoading: state.isLoading
 });
 
 export const mapDispatchToProps = (dispatch) => ({
