@@ -1,4 +1,10 @@
 .app{
     background-image: url("https://images2.alphacoders.com/749/749574.jpg");
     background-repeat: none;
+    height: 57.4em;
+    background-color: #33334a;
+}
+
+.logo-img {
+  height: 275px;
 }

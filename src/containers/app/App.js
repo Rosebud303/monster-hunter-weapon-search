@@ -14,7 +14,7 @@ export class App extends Component {
   render() {
     return (
       <div className='app'>
-      <img src={'https://i.imgur.com/4kh8sCT.png'} />
+      <img className='logo-img' src={'https://i.imgur.com/4kh8sCT.png'} />
         {
           !this.props.isLoading ?
           <WeaponContainer />
