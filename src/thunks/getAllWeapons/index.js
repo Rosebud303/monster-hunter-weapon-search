@@ -1,4 +1,4 @@
-import { setWeapons, isLoading } from '../../actions';
+import { setWeapons, isLoading, getCategoryTitles } from '../../actions';
 import fetchAll from '../fetches/fetchAll';
 
 const getAllWeapons = (url) => {
@@ -6,9 +6,15 @@ const getAllWeapons = (url) => {
     try{
       dispatch(isLoading(true))
       const weapons = await fetchAll(url)
-      console.log(weapons)
       dispatch(isLoading(false))
       dispatch(setWeapons(weapons))
+      const categories = weapons.reduce((acc, cur) => {
+        if(!acc.includes(cur.type)){
+          acc.push(cur.type)
+        }
+        return acc
+      },[])
+      dispatch(getCategoryTitles(categories))
     } catch (error) {
       //dispatch(hasErrored(error.message))
     }

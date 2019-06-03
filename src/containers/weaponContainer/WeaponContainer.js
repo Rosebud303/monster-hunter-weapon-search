@@ -8,7 +8,6 @@ export class WeaponContainer extends Component {
   render() {
 
     let displayCards = this.props.weapons.map(weapon => {
-      console.log(weapon)
       return <Weapon weapon={weapon} key={weapon.id} />
     })
     return (

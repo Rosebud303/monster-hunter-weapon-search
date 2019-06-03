@@ -35,6 +35,24 @@ export const weaponsReducer = (state = [], action) => {
   }
 }
 
+export const categoriesReducer = (state = [], action) => {
+  switch (action.type) {
+    case 'GET_CATEGORY_TITLES':
+      return action.categories
+    default:
+      return state
+  }
+}
+
+export const currentCategoryReducer = (state = '', action) => {
+  switch (action.type) {
+    case 'GET_CURRENT_CATEGORY':
+      return action.categoryTitle
+    default:
+      return state
+  }
+}
+
 export const isLoadingReducer = (state = false, action) => {
   switch (action.type) {
     case "IS_LOADING":
