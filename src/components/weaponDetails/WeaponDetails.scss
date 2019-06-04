@@ -1,0 +1,83 @@
+.details {
+  display: flex;
+  justify-content: space-around;
+  width: 42%;
+  margin: auto;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 15px;
+  background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url('https://i.imgur.com/APMTCaY.jpg');
+  background-repeat: no-repeat;
+  opacity: .8;
+  background-position: center; 
+  color: white;
+  box-shadow: 8px 8px 12px 1px #171414;
+  border: 2px solid #0b0909;
+}
+
+h2 {
+  text-align: center;
+  margin-top: 0;
+  font-size: 25px;
+}
+
+.cate0 {
+  color: #eeff21;
+  text-decoration: underline;
+}
+
+.cate1 {
+  color: #00ffd4;
+}
+
+.cate2 {
+  color: #00d000;
+}
+
+.cate3 {
+  color: #247fff;
+}
+
+.cate {
+  color: #ed8b20;
+}
+
+.back {
+  position: absolute;
+  width: 100%;
+  font-family: monospace;
+}
+
+.name-and-img {
+  background: #123345;
+  padding: 5px;
+  box-shadow: inset -7px 7px 20px 7px #010101d9;
+  width: 12em;
+}
+
+.home2 {
+  margin-top: 45px;
+  font-size: 26px;
+  font-weight: bolder;
+}
+
+.home {
+  color: white;
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  width: 17%;
+  background-image: url('https://i.imgur.com/ven6UMn.png');
+  background-repeat: no-repeat;
+  opacity: 1;
+  background-size: 100%;
+  background-position: center; 
+  &:hover {
+    transition: .5s;
+    background-image: url('https://i.kym-cdn.com/photos/images/original/001/315/551/b93.gif');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    color: red;
+  }
+}

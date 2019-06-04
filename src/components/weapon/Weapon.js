@@ -2,11 +2,17 @@ import React from 'react';
 import { Link } from 'react-router-dom'
 import './Weapon.scss'
 
-export const Weapon = (prop) => {
+export const Weapon = ({id, picture, findWeapon, name}) => {
+  
   return (
-    <Link className='weapon-card'>
-      <p>{prop.weapon.name}</p>
-      <img className='weapon-image' src={prop.weapon.picture} />
+    <Link id={id} className='weapon-card' to={`/weapons/${id}`}>
+      <p id={id} 
+        >
+         {name}
+      </p>
+      <img id={id} className='weapon-image'
+           src={picture}
+           />
     </Link>
   )
 }

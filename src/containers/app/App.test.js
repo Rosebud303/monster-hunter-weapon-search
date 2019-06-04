@@ -1,9 +1,29 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import App from './App';
+import { shallow } from 'enzyme';
+import * as actions from '../../actions';
+import {App, mapDispatchToProps, mapStateToProps} from './App';
 
-it('renders without crashing', () => {
-  const div = document.createElement('div');
-  ReactDOM.render(<App />, div);
-  ReactDOM.unmountComponentAtNode(div);
+import getAllWeapons from '../../thunks/getAllWeapons';
+jest.mock('../../thunks/getAllWeapons');
+
+describe('App', () => {
+  
+  describe('Component', () => {
+    
+  });
+  
+  describe('mapStateToProps', () => {
+    
+  });
+
+  describe('mapDispatchToProps', () => {
+    it('should call getAllWeapons with the correct params', () => {
+      let mockUrl = 'www.MHW.com';
+      let mockDispatch = jest.fn();
+      let actionsToDispatch = getAllWeapons(mockUrl);
+      let mappedProps = mapDispatchToProps(mockDispatch);
+      mappedProps.getAllWeapons(actionsToDispatch);
+      expect(mockDispatch).toHaveBeenCalledWith(actionsToDispatch);
+    });
+  }); 
 });
