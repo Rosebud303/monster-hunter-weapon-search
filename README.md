@@ -1,68 +1,49 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# MHW-Weapons
 
-## Available Scripts
+This app is an informational page designed to help current players find weapons they would like to know about. The user can choose from the current database of weapons available. They will be able to click an individual image and it will bring them to a detailed page about what the weapon's stats are. The user can also view the full image of the weapon with a simple click of the image. They will also be able to navigate foward and back using buttons provided.
 
-In the project directory, you can run:
+# Installation
 
-### `npm start`
+**This application will use a backend, to access, please [clone down this repo](git@github.com:Rosebud303/monster-hunter-weapon-search.git).**
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+**Clone** this repo https://github.com/Rosebud303/monster-hunter-weapon-search and move into it.
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+``` git clone git@github.com:Rosebud303/monster-hunter-weapon-search.git```
 
-### `npm test`
+In the project directory you will need to instal dependencies and start the server, please run:
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```npm install```
 
-### `npm run build`
+```npm start```
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+# Load Page
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+![LoadScreen](mhw1.png)
 
-### `npm run eject`
+# Weapons Display
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+![WeaponsDisplay](mhw2.png)
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+# Weapon Details
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+![WeaponDetails](mhw3.png)
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+# Full Image
 
-## Learn More
+![FullImage](mhw4.png)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+# Tech/Frameworks Used
 
-### Code Splitting
+* React
+* Sass/Scss
+* JSX
+* fetch API
+* Testing with Enzyme & Jest
+* Router
+* Thunks
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+# Learning Goals 
 
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+My learning goals were to get better at Redux and thunk testing. I have always struggled with testing ever since it was introduced to me. I feel like this project was good practice for testing both of those things. It also helped me understand how to use Router better as well. This app made me feel stronger about my css skills as well.
