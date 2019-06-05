@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should match snap shot 1`] = `
+<div>
+  <div
+    className="full-image"
+  >
+    <h2
+      className="image-name"
+    >
+      Sword
+    </h2>
+    <img
+      className="full-picture"
+      src="picture.png"
+    />
+    <Link
+      className="image-back"
+      to="/weapons/1"
+    >
+      Back
+    </Link>
+  </div>
+</div>
+`;

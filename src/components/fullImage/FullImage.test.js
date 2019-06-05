@@ -1,10 +1,11 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import WeaponDetails from './WeaponDetails'
+import FullImage from './FullImage'
 
 
-describe('WeaponDetails', () => {
-  let wrapper; 
+
+describe('', () => {
+  let wrapper;
   let mockId = 1
   let mockPicture = 'picture.png'
   let mockName = 'Sword'
@@ -16,15 +17,15 @@ describe('WeaponDetails', () => {
   let mockCraft = false
   beforeEach(() => {
     wrapper = shallow (
-      <WeaponDetails id={mockId}
-              name={mockName}
-              picture={mockPicture}
-              type={mockType}
-              minDMG={mockMin}
-              maxDMG={mockMax}
-              damageType={mockDmgType}
-              rarity={mockRare}
-              craftable={mockCraft}/>
+      <FullImage id={mockId}
+      name={mockName}
+      picture={mockPicture}
+      type={mockType}
+      minDMG={mockMin}
+      maxDMG={mockMax}
+      damageType={mockDmgType}
+      rarity={mockRare}
+      craftable={mockCraft}/>
     )
   });
 

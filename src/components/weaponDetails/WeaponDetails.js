@@ -6,18 +6,18 @@ const WeaponDetails = ({type, name, minDMG, maxDMG, rarity, damageType, craftabl
   return (
     <div className='back'>
       <div className='details'>
-        <div className='name-and-img'>
+        <Link className='name-and-img' to={`/image/${name}`}>
           <h2>{name}</h2>
           <img src={picture} />
-        </div>
+          <p className='click'>| click for full image |</p>
+        </Link>
         <div className='dmg'>
-          {/* <p className='cate0'>Damage</p> */}
           <p><span className='cate1'>Min:</span> {minDMG}</p>
           <p><span className='cate2'>Max:</span> {maxDMG}</p>
           <p><span className='cate3'>DMG Type:</span> {damageType}</p>
           <p><span className='cate'>Type:</span> {type}</p>
           {
-            craftable ? <p><span className='cate'>Craftable:</span> True</p> 
+            craftable === true ? <p><span className='cate'>Craftable:</span> True</p> 
             : 
             <p><span className='cate'>Craftable:</span> False</p>
           }

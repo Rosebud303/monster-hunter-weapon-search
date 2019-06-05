@@ -1,7 +1,12 @@
 const fetchAll = async (url) => {
-  const response = await fetch(url);
-  if (!response.ok) throw Error(response.statusText);
-  return response.statusText === 'No Content' ? null : await response.json();
-}
+  try {
+   const response = await fetch(url)
+   if(!response.ok) { throw new Error(`Fetch Call Cannot Be Made`)}
+   const data = await response.json()
+   return data;
+  } catch (error) {
+   return error;
+  }
+ }
 
 export default fetchAll;

@@ -1,13 +1,13 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import CategoryTitle from './CategoryTitle'
+import Loader from './Loader'
 
 
 describe('', () => {
   let wrapper;  
   beforeEach(() => {
     wrapper = shallow (
-      <CategoryTitle />
+      <Loader />
     )
   });
 

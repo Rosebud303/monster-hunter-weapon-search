@@ -16,7 +16,6 @@
 }
 
 h2 {
-  text-align: center;
   margin-top: 0;
   font-size: 25px;
 }
@@ -48,11 +47,31 @@ h2 {
   font-family: monospace;
 }
 
+.click {
+  font-size: 10px;
+}
+
 .name-and-img {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   background: #123345;
   padding: 5px;
   box-shadow: inset -7px 7px 20px 7px #010101d9;
   width: 12em;
+  margin-right: 10px;
+  transition: .4s;
+  color: white;
+  &:hover {
+    transition: .4s;
+    background: #22546f;
+    padding: 5px;
+    box-shadow: inset 0px 0px 20px 7px #010101d9;
+    width: 12em;
+    color: #838697;
+    cursor: pointer;
+  }
 }
 
 .home2 {
@@ -71,7 +90,8 @@ h2 {
   background-repeat: no-repeat;
   opacity: 1;
   background-size: 100%;
-  background-position: center; 
+  background-position: center;
+  transition: .5s;
   &:hover {
     transition: .5s;
     background-image: url('https://i.kym-cdn.com/photos/images/original/001/315/551/b93.gif');

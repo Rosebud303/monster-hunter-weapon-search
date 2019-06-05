@@ -1,0 +1,95 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`WeaponDetails should match snap shot 1`] = `
+<div
+  className="back"
+>
+  <div
+    className="details"
+  >
+    <Link
+      className="name-and-img"
+      to="/image/Sword"
+    >
+      <h2>
+        Sword
+      </h2>
+      <img
+        src="picture.png"
+      />
+      <p
+        className="click"
+      >
+        | click for full image |
+      </p>
+    </Link>
+    <div
+      className="dmg"
+    >
+      <p>
+        <span
+          className="cate1"
+        >
+          Min:
+        </span>
+         
+        80
+      </p>
+      <p>
+        <span
+          className="cate2"
+        >
+          Max:
+        </span>
+         
+        200
+      </p>
+      <p>
+        <span
+          className="cate3"
+        >
+          DMG Type:
+        </span>
+         
+        fire
+      </p>
+      <p>
+        <span
+          className="cate"
+        >
+          Type:
+        </span>
+         
+        small-sword
+      </p>
+      <p>
+        <span
+          className="cate"
+        >
+          Craftable:
+        </span>
+         False
+      </p>
+      <p>
+        <span
+          className="cate"
+        >
+          Rarity:
+        </span>
+         
+        1
+      </p>
+    </div>
+    <Link
+      className="home"
+      to="/weapons"
+    >
+      <p
+        className="home2"
+      >
+        BACK
+      </p>
+    </Link>
+  </div>
+</div>
+`;

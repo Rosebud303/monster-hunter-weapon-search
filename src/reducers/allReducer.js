@@ -61,12 +61,3 @@ export const isLoadingReducer = (state = false, action) => {
       return state
   }
 }
-
-// export const currentWeaponReducer = (state = 0, action) => {
-//   switch (action.type) {
-//     case 'GET_CURRENT_WEAPON':
-//       return action.weapon
-//     default:
-//       return state
-//   }
-// }

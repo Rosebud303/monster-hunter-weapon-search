@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should match snap shot 1`] = `
+<div
+  className="loader"
+>
+  <h1>
+    Loading...
+  </h1>
+  <img
+    alt="Is Loading"
+    className="load-img"
+    src="https://media.giphy.com/media/zocX5Vxv9Bs9q/giphy.gif"
+  />
+</div>
+`;
