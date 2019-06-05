@@ -17,3 +17,8 @@ export const getCurrentCategory = (categoryTitle) => ({
   type: 'GET_CURRENT_CATEGORY',
   categoryTitle
 })
+
+// export const getCurrentWeapon = (weapon) => ({
+//   type: 'GET_CURRENT_WEAPON',
+//   weapon
+// })

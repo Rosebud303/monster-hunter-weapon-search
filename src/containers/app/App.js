@@ -1,11 +1,14 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import './App.css'
+import { Route, Switch } from 'react-router-dom'
+import WeaponDetails from '../../components/weaponDetails/WeaponDetails'
 import Header from '../header/Header'
 import Loader from '../../components/loader/Loader'
 import getAllWeapons from '../../thunks/getAllWeapons';
 import WeaponContainer from '../weaponContainer/WeaponContainer'
 import * as actions from '../../actions';
+import FullImage from '../../components/fullImage/FullImage';
 
 export class App extends Component {
 
@@ -19,7 +22,21 @@ export class App extends Component {
         <Header />
         {
           !this.props.isLoading ?
-          <WeaponContainer />
+          <Switch>
+            <Route exact path='/weapons' component={WeaponContainer} />
+            <Route path='/weapons/:id' 
+              render={({ match }) => {
+                const weapon = this.props.weapons.find(weap => weap.id == parseInt(match.params.id));
+                return <WeaponDetails {...weapon} />
+              }} 
+            />
+            <Route path='/image/:name' 
+              render={({ match }) => {
+                const weapon = this.props.weapons.find(weap => weap.name == match.params.name);
+                return <FullImage {...weapon} />
+              }} 
+            />
+          </Switch>
           :
           <Loader />
         }

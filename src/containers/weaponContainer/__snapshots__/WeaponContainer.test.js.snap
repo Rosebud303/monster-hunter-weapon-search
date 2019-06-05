@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`WeaponContainer Component should match the snapshot 1`] = `
+<div
+  className="weapon-container"
+>
+  <Weapon
+    craftable={true}
+    damageType="sever"
+    id={1}
+    key="1"
+    maxDMG={384}
+    minDMG={80}
+    name="Buster Sword 1"
+    picture="https://assets.mhw-db.com/weapons/great-sword/83f7ab6e7e5669ec416d772049b8b054e2624c2e.c7bad811e203c9bb55626e414659a4f7.png"
+    rarity={1}
+    type="great-sword"
+  />
+  <Weapon
+    craftable={true}
+    damageType="sever"
+    id={2}
+    key="2"
+    maxDMG={384}
+    minDMG={80}
+    name="Buster Sword 2"
+    picture="https://assets.mhw-db.com/weapons/great-sword/83f7ab6e7e5669ec416d772049b8b054e2624c2e.c7bad811e203c9bb55626e414659a4f7.png"
+    rarity={1}
+    type="great-sword"
+  />
+</div>
+`;

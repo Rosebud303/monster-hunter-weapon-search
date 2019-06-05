@@ -5,7 +5,8 @@ const rootReducer = combineReducers({
   weapons: reducers.weaponsReducer,
   isLoading: reducers.isLoadingReducer,
   categories: reducers.categoriesReducer,
-  currentCategory: reducers.currentCategoryReducer
+  currentCategory: reducers.currentCategoryReducer,
+  // currentWeapon: reducers.currentWeaponReducer
 })
 
 export default rootReducer;

@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App Component should match snap shot 1`] = `
+<div
+  className="app"
+>
+  <Header />
+  <Switch>
+    <Route
+      component={
+        Object {
+          "$$typeof": Symbol(react.memo),
+          "WrappedComponent": [Function],
+          "compare": null,
+          "displayName": "Connect(WeaponContainer)",
+          "type": [Function],
+        }
+      }
+      exact={true}
+      path="/weapons"
+    />
+    <Route
+      path="/weapons/:id"
+      render={[Function]}
+    />
+    <Route
+      path="/image/:name"
+      render={[Function]}
+    />
+  </Switch>
+</div>
+`;

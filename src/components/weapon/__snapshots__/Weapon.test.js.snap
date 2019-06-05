@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Weapon should match snap shot 1`] = `
+<Link
+  className="weapon-card"
+  id={1}
+  to="/weapons/1"
+>
+  <p
+    id={1}
+  >
+    Sword
+  </p>
+  <img
+    className="weapon-image"
+    id={1}
+    src="picture.png"
+  />
+</Link>
+`;

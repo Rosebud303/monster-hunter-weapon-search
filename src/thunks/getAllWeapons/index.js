@@ -16,7 +16,7 @@ const getAllWeapons = (url) => {
       },[])
       dispatch(getCategoryTitles(categories))
     } catch (error) {
-      //dispatch(hasErrored(error.message))
+      // dispatch(hasErrored(error.message))
     }
   }
 }
