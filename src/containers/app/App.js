@@ -23,7 +23,7 @@ export class App extends Component {
         {
           !this.props.isLoading ?
           <Switch>
-            <Route exact path='/weapons' component={WeaponContainer} />
+            <Route exact path='/' component={WeaponContainer} />
             <Route path='/weapons/:id' 
               render={({ match }) => {
                 const weapon = this.props.weapons.find(weap => weap.id == parseInt(match.params.id));
