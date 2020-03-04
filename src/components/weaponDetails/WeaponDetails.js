@@ -23,7 +23,7 @@ const WeaponDetails = ({type, name, minDMG, maxDMG, rarity, damageType, craftabl
           }
           <p><span className='cate'>Rarity:</span> {rarity}</p>
         </div>
-        <Link className='home' to='/weapons'><p className='home2'>BACK</p></Link>
+        <Link className='home' to='/'><p className='home2'>BACK</p></Link>
       </div>
     </div>
   )
