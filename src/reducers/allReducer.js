@@ -11,7 +11,7 @@ export const weaponsReducer = (state = [], action) => {
             minDMG: weapon.attack.raw,
             maxDMG: weapon.attack.display, 
             rarity: weapon.rarity,
-            damageType: weapon.attributes.damageType,
+            damageType: weapon.damageType,
             craftable: weapon.crafting.craftable,
             picture: image
           }
@@ -23,7 +23,7 @@ export const weaponsReducer = (state = [], action) => {
             minDMG: weapon.attack.raw,
             maxDMG: weapon.attack.display, 
             rarity: weapon.rarity,
-            damageType: weapon.attributes.damageType,
+            damageType: weapon.damageType,
             craftable: weapon.crafting.craftable,
             picture: 'No Image'
           }
