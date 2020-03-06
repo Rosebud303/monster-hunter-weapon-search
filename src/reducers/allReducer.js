@@ -15,7 +15,7 @@ export const weaponsReducer = (state = [], action) => {
             craftable: weapon.crafting.craftable,
             picture: image
           }
-        } else if (weapon.assets === null) {
+        } else if (weapon.assets == null) {
           return {
             id: weapon.id,
             type: weapon.type,
@@ -25,7 +25,7 @@ export const weaponsReducer = (state = [], action) => {
             rarity: weapon.rarity,
             damageType: weapon.damageType,
             craftable: weapon.crafting.craftable,
-            picture: 'No Image'
+            picture: 'https://i.imgur.com/SYnqQnf.png'
           }
 
         }

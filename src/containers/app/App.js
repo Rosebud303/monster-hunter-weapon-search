@@ -21,7 +21,7 @@ export class App extends Component {
     return (
       <div className='app'>
         <Header />
-        <Filter />
+        {/* <Filter /> */}
         {
           !this.props.isLoading ?
           <Switch>
