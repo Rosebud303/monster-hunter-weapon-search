@@ -6,7 +6,7 @@ export const Weapon = ({id, picture, name}) => {
   
   return (
     <Link id={id} className='weapon-card' to={`/weapons/${id}`}>
-      <p id={id}>
+      <p className='card-title' id={id}>
          {name}
       </p>
       <img id={id} className='weapon-image'
