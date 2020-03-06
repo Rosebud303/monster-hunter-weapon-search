@@ -9,6 +9,7 @@ import getAllWeapons from '../../thunks/getAllWeapons';
 import WeaponContainer from '../weaponContainer/WeaponContainer'
 import * as actions from '../../actions';
 import FullImage from '../../components/fullImage/FullImage';
+import Filter from '../../containers/filterOptions/Filter'
 
 export class App extends Component {
 
@@ -20,6 +21,7 @@ export class App extends Component {
     return (
       <div className='app'>
         <Header />
+        <Filter />
         {
           !this.props.isLoading ?
           <Switch>
